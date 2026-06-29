@@ -44,7 +44,7 @@
           <li><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
         <div class="nav__actions">
-          
+          <a href="#contact-form" class="btn-nav btn-nav--outline">Contact</a>
           <a href="https://maps.google.com/?q=14610+15th+Ave+NE+Shoreline+WA+98155"
              target="_blank" rel="noopener noreferrer"
              class="btn-nav btn-nav--primary">Directions</a>
@@ -192,6 +192,36 @@
                  class="location__map-btn">Open in Maps</a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- CONTACT FORM -->
+      <section class="contact-form-section" id="contact-form" aria-labelledby="contact-heading">
+        <div class="container">
+          <h2 id="contact-heading" class="section-heading">Get In Touch</h2>
+          <p class="section-sub">Questions about products, hours, or what's in stock? We'll get back to you.</p>
+          <form class="form" action="https://api.web3forms.com/submit" method="POST" id="contact">
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY">
+            <input type="hidden" name="subject" value="New message from aaasmokeandvape.com">
+            <input type="hidden" name="from_name" value="AAA Smoke & Vape Website">
+            <input type="checkbox" name="botcheck" style="display:none">
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="name">Name</label>
+                <input class="form__input" type="text" id="name" name="name" required placeholder="Your name">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="email">Email</label>
+                <input class="form__input" type="email" id="email" name="email" required placeholder="your@email.com">
+              </div>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="message">Message</label>
+              <textarea class="form__input form__textarea" id="message" name="message" required placeholder="What can we help you with?" rows="4"></textarea>
+            </div>
+            <div id="form-result" class="form__result" aria-live="polite"></div>
+            <button class="form__submit" type="submit">Send Message</button>
+          </form>
         </div>
       </section>
 
