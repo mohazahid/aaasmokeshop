@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AAA Smoke & Vape Shop — Shoreline, Washington. Best prices, knowledgeable staff, huge selection. Open 7 days a week.">
+  <title>AAA Smoke & Vape Shop | Shoreline, WA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- AGE GATE -->
+  <div id="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-gate-heading">
+    <div class="age-gate__backdrop"></div>
+    <div class="age-gate__card">
+      <p class="age-gate__eyebrow">Age Verification</p>
+      <h1 id="age-gate-heading" class="age-gate__heading">Are you 21<br>or older?</h1>
+      <p class="age-gate__body">You must be 21+ to view this site. By entering you confirm you are of legal age in your jurisdiction.</p>
+      <button class="btn btn--primary" id="age-confirm">Yes, I'm 21+</button>
+      <button class="btn btn--ghost" id="age-deny">No, take me back</button>
+    </div>
+  </div>
+
+  <!-- SITE CONTENT -->
+  <div id="site-content" aria-hidden="true">
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- NAV -->
+    <nav class="nav" aria-label="Main navigation">
+      <div class="container nav__inner">
+        <a href="#" class="nav__logo" aria-label="AAA Smoke and Vape home">
+          AAA Smoke &amp; Vape
+        </a>
+        <ul class="nav__links" role="list">
+          <li><a href="#products" class="nav__link">Products</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#hours" class="nav__link">Hours</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a href="tel:+12065550199" class="btn-nav btn-nav--outline">Call Us</a>
+          <a href="https://maps.google.com/?q=123+Aurora+Ave+N+Shoreline+WA+98133"
+             target="_blank" rel="noopener noreferrer"
+             class="btn-nav btn-nav--primary">Directions</a>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main-content">
+
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="eyebrow">Shoreline, Washington &middot; Open 7 Days</p>
+            <h2 id="hero-heading" class="hero__heading">
+              Shoreline's<br>Smoke<br>Shop
+            </h2>
+            <p class="hero__body">
+              The biggest selection in the area, at prices that make sense.
+              Staff who actually know what they're talking about.
+            </p>
+            <div class="hero__actions">
+              <a href="https://maps.google.com/?q=123+Aurora+Ave+N+Shoreline+WA+98133"
+                 target="_blank" rel="noopener noreferrer"
+                 class="hero-btn hero-btn--primary">Get Directions</a>
+              <a href="tel:+12065550199" class="hero-btn hero-btn--outline">(206) 555-0199</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRUST BAR -->
+      <section class="trust" aria-label="Why shop with us">
+        <div class="container trust__grid">
+          <div class="trust__item">
+            <p class="trust__stat">Lowest<br>Prices</p>
+            <p class="trust__sub">We'll beat any local price</p>
+          </div>
+          <div class="trust__item">
+            <p class="trust__stat">Staff Who<br>Know</p>
+            <p class="trust__sub">Real answers, no upsell</p>
+          </div>
+          <div class="trust__item">
+            <p class="trust__stat">1000+<br>Products</p>
+            <p class="trust__sub">In stock, on the shelf today</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHAT WE CARRY -->
+      <section class="categories" id="products" aria-labelledby="categories-heading">
+        <div class="container">
+          <h2 id="categories-heading" class="section-heading">What We Carry</h2>
+          <p class="section-sub">Come in and let our staff walk you through everything.</p>
+          <ul class="chip-list" role="list" aria-label="Product categories">
+            <li class="chip chip--active">Vapes &amp; Disposables</li>
+            <li class="chip">Glass &amp; Pipes</li>
+            <li class="chip">Vape Juice / E-Liquid</li>
+            <li class="chip">Wraps &amp; Papers</li>
+            <li class="chip">CBD Products</li>
+            <li class="chip">Kratom</li>
+            <li class="chip">Hookah / Shisha</li>
+            <li class="chip">Nicotine Pouches</li>
+            <li class="chip">Cigarettes &amp; Tobacco</li>
+            <li class="chip">Accessories</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- IN STORE NOW -->
+      <section class="products" id="about" aria-labelledby="products-heading">
+        <div class="container">
+          <div class="products__header">
+            <h2 id="products-heading" class="section-heading">In Store Now</h2>
+            <p class="products__cta-text">Come see it all &rarr;</p>
+          </div>
+          <div class="product-grid">
+            <article class="product-card">
+              <div class="product-card__img" aria-hidden="true"></div>
+              <div class="product-card__body">
+                <p class="product-card__cat">Vapes</p>
+                <p class="product-card__name">Vape Pod Kit</p>
+                <p class="product-card__price">From $24.99</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-card__img" aria-hidden="true"></div>
+              <div class="product-card__body">
+                <p class="product-card__cat">Glass</p>
+                <p class="product-card__name">Water Pipe</p>
+                <p class="product-card__price">From $49.99</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-card__img" aria-hidden="true"></div>
+              <div class="product-card__body">
+                <p class="product-card__cat">Wraps</p>
+                <p class="product-card__name">Rolling Papers</p>
+                <p class="product-card__price">From $3.99</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-card__img" aria-hidden="true"></div>
+              <div class="product-card__body">
+                <p class="product-card__cat">CBD</p>
+                <p class="product-card__name">CBD Gummies</p>
+                <p class="product-card__price">From $29.99</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOURS & LOCATION -->
+      <section class="location" id="hours" aria-labelledby="location-heading">
+        <div class="container">
+          <h2 id="location-heading" class="section-heading">Come Find Us</h2>
+          <div class="location__grid" id="contact">
+            <div class="location__hours">
+              <h3 class="location__label">Hours</h3>
+              <ul class="hours-list" role="list">
+                <li class="hours-row">
+                  <span class="hours-day">Mon &ndash; Fri</span>
+                  <span class="hours-time">9 AM &ndash; 9 PM</span>
+                </li>
+                <li class="hours-row">
+                  <span class="hours-day">Saturday</span>
+                  <span class="hours-time">10 AM &ndash; 8 PM</span>
+                </li>
+                <li class="hours-row">
+                  <span class="hours-day">Sunday</span>
+                  <span class="hours-time">11 AM &ndash; 7 PM</span>
+                </li>
+              </ul>
+            </div>
+            <div class="location__address">
+              <h3 class="location__label">Address</h3>
+              <address class="location__addr-text">
+                123 Aurora Ave N<br>
+                Shoreline, WA 98133
+              </address>
+              <a href="tel:+12065550199" class="location__phone">(206) 555-0199</a>
+              <a href="https://maps.google.com/?q=123+Aurora+Ave+N+Shoreline+WA+98133"
+                 target="_blank" rel="noopener noreferrer"
+                 class="location__map-btn">Open in Maps</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+      <div class="container footer__inner">
+        <p class="footer__name">AAA Smoke &amp; Vape</p>
+        <p class="footer__meta">&copy; 2026 &middot; Shoreline, WA &middot; Must be 21+ to enter</p>
+      </div>
+    </footer>
+
+  </div><!-- /#site-content -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>

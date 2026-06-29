@@ -1,0 +1,7 @@
+{
+  "name": "aaa-smoke-vape",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx serve -l 3456 ."
+  }
+}
