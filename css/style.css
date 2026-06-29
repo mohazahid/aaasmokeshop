@@ -371,10 +371,6 @@ ul { list-style: none; }
   padding: 48px 0;
   border-top: 1px solid var(--leather);
 }
-.products .container {
-  max-width: 100%;
-  padding: 0 var(--pad-x);
-}
 .products__header {
   display: flex;
   justify-content: space-between;
