@@ -397,8 +397,21 @@ ul { list-style: none; }
 .product-card:hover { border-color: var(--cream); }
 .product-card__img {
   background: #1A1005;
-  height: 140px;
+  height: 180px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.product-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  padding: 12px;
+  transition: transform 0.25s ease;
+}
+.product-card:hover .product-card__img img { transform: scale(1.05); }
 .product-card__body { padding: 14px; }
 .product-card__cat {
   font-size: 10px;
