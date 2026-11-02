@@ -120,7 +120,7 @@ def page(p: dict) -> str:
   <meta name="twitter:image" content="{SITE}/images/og.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="/css/style.css">
   <script defer src="/_vercel/insights/script.js"></script>
   <script type="application/ld+json">{json.dumps(schema, ensure_ascii=False)}</script>
@@ -176,6 +176,13 @@ def page(p: dict) -> str:
           <h2 class="section-heading">{e(p["name"])} we carry</h2>
           <p class="section-sub">What is on the shelf changes week to week, these are what we usually have. We do not sell {e(p["kind"])} online, only in the store.</p>
           <ul class="cat-list" role="list">{items}</ul>
+        </div>
+      </section>
+      <section class="categories">
+        <div class="container">
+          <h2 class="section-heading">How to find us</h2>
+          <p class="section-sub">We are at 14610 15th Ave NE in Shoreline, a short drive from Lake Forest Park, Kenmore and north Seattle. We are open Monday through Saturday from 10:30 AM to 7 PM and closed on Sunday. Bring a valid ID, you have to be 21 or older to come in.</p>
+          <a href="{MAPS}" target="_blank" rel="noopener noreferrer" class="hero-btn hero-btn--primary">Open in Maps</a>
         </div>
       </section>
       <section class="faq-section">
