@@ -21,6 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 
@@ -343,13 +344,18 @@
       </div>
     </footer>
 
+    <div class="mobile-bar" aria-label="Quick actions">
+      <a href="https://maps.google.com/?q=14610+15th+Ave+NE+Shoreline+WA+98155" target="_blank" rel="noopener noreferrer" class="mobile-bar__btn mobile-bar__btn--primary">Directions</a>
+      <a href="#contact-form" class="mobile-bar__btn">Contact</a>
+    </div>
+
   </div><!-- /#site-content -->
 
   <script src="js/main.js"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "Store",
     "name": "AAA Smoke & Vape Shop",
     "url": "https://www.aaasmokeandvape.com",
     "hasMap": "https://maps.google.com/?q=14610+15th+Ave+NE+Shoreline+WA+98155",
@@ -366,7 +372,13 @@
       "latitude": 47.7568,
       "longitude": -122.3153
     },
-    "openingHours": ["Mo-Sa 10:30-19:00"],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "10:30",
+      "closes": "19:00"
+    }],
+    "image": "https://www.aaasmokeandvape.com/images/geekbar-pulse2.jpg",
     "description": "Shoreline's smoke and vape shop. Best prices on FLUM, Geek Bar, ZYN, kratom, glass, CBD, wraps, hookah, nicotine pouches and accessories. Serving Shoreline, Lake Forest Park, Kenmore and north Seattle.",
     "priceRange": "$",
     "areaServed": ["Shoreline WA", "Lake Forest Park WA", "Kenmore WA", "North Seattle WA"]

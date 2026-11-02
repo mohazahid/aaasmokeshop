@@ -67,7 +67,8 @@ ul { list-style: none; }
 .age-gate__backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.93);
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(6px);
 }
 .age-gate__card {
   position: relative;
@@ -142,8 +143,7 @@ ul { list-style: none; }
 }
 
 /* Site content hidden until gate cleared */
-#site-content { display: none; }
-#site-content.visible { display: block; }
+body.gated { overflow: hidden; }
 
 /* === NAV === */
 .nav {
@@ -714,3 +714,35 @@ ul { list-style: none; }
   display: none;
 }
 .faq-item.open .faq-a { display: block; }
+
+.mobile-bar { display: none; }
+@media (max-width: 768px) {
+  .mobile-bar {
+    display: flex;
+    gap: 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+    background: var(--espresso);
+    border-top: 1px solid var(--leather);
+  }
+  .mobile-bar__btn {
+    flex: 1;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--leather);
+    border-radius: var(--radius);
+    color: var(--cream);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: none;
+  }
+  .mobile-bar__btn--primary { background: var(--cream); color: var(--espresso); border-color: var(--cream); }
+  .footer { padding-bottom: 88px; }
+}
