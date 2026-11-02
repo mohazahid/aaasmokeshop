@@ -19,7 +19,7 @@
   <meta name="twitter:image" content="https://www.aaasmokeandvape.com/images/geekbar-pulse2.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="/_vercel/insights/script.js"></script>
 </head>
@@ -69,9 +69,9 @@
       <section class="hero" aria-labelledby="hero-heading">
         <div class="container hero__inner">
           <div class="hero__content">
-            <p class="eyebrow">Shoreline, Washington &middot; Open Mon&ndash;Sat 10:30 AM&ndash;7 PM</p>
+            <p class="status" id="open-status">Open Monday to Saturday, 10:30 AM to 7 PM</p>
             <h1 id="hero-heading" class="hero__heading">
-              Shoreline's<br>Smoke &amp;<br>Vape Shop
+              Shoreline's smoke and vape shop
             </h1>
             <p class="hero__body">
               We carry FLUM, Geek Bar, ZYN, kratom, glass, CBD, hookah and wraps, and we are open Monday through Saturday from 10:30 AM to 7 PM at 14610 15th Ave NE in Shoreline.
@@ -79,10 +79,18 @@
             <div class="hero__actions">
               <a href="https://maps.google.com/?q=14610+15th+Ave+NE+Shoreline+WA+98155"
                  target="_blank" rel="noopener noreferrer"
-                 class="hero-btn hero-btn--primary">Get Directions</a>
-              
+                 class="hero-btn hero-btn--primary">Get directions</a>
+              <a href="#products" class="hero-btn hero-btn--outline">See what we carry</a>
             </div>
           </div>
+          <aside class="hero__card" aria-label="Store info">
+            <p class="hero__card-label">Visit us</p>
+            <p class="hero__card-big">14610 15th Ave NE</p>
+            <p class="hero__card-text">Shoreline, WA 98155</p>
+            <div class="hero__card-row"><span>Mon to Sat</span><span>10:30 AM to 7 PM</span></div>
+            <div class="hero__card-row"><span>Sunday</span><span>Closed</span></div>
+            <p class="hero__card-text">21+ only, bring a valid ID</p>
+          </aside>
         </div>
       </section>
 
@@ -90,15 +98,15 @@
       <section class="trust" aria-label="Why shop with us">
         <div class="container trust__grid">
           <div class="trust__item">
-            <p class="trust__stat">Open 6<br>Days</p>
+            <p class="trust__stat">Open 6 days</p>
             <p class="trust__sub">Monday to Saturday, 10:30 to 7</p>
           </div>
           <div class="trust__item">
-            <p class="trust__stat">Over 900<br>Items</p>
+            <p class="trust__stat">Over 900 items</p>
             <p class="trust__sub">Vapes, pouches, glass and more</p>
           </div>
           <div class="trust__item">
-            <p class="trust__stat">Ask the<br>Counter</p>
+            <p class="trust__stat">Ask the counter</p>
             <p class="trust__sub">If you don't see it here just ask</p>
           </div>
         </div>
@@ -107,7 +115,7 @@
       <!-- WHAT WE CARRY -->
       <section class="categories" id="products" aria-labelledby="categories-heading">
         <div class="container">
-          <h2 id="categories-heading" class="section-heading">What We Carry</h2>
+          <h2 id="categories-heading" class="section-heading">What we carry</h2>
           <p class="section-sub">The brands people ask for the most are FLUM, Geek Bar, Lost Mary and ZYN. We also carry Rogue, On!, MIT45 and Backwoods, plus a lot more that would not fit on this page. We are on 15th Ave NE so it is a short drive from Lake Forest Park, Kenmore and north Seattle too.</p>
           <ul class="cat-list" role="list" aria-label="Product categories">
             <li>Vapes &amp; Disposables</li>
@@ -128,7 +136,7 @@
       <section class="products" id="about" aria-labelledby="products-heading">
         <div class="container">
           <div class="products__header">
-            <h2 id="products-heading" class="section-heading">In Store Now</h2>
+            <h2 id="products-heading" class="section-heading">In store now</h2>
             <p class="products__cta-text">There is a lot more in the store &rarr;</p>
           </div>
           <div class="product-grid">
@@ -139,7 +147,7 @@
               <div class="product-card__body">
                 <p class="product-card__cat">Disposables</p>
                 <p class="product-card__name">FLUM Mello 20K</p>
-                <p class="product-card__price">In Store</p>
+                <p class="product-card__price">In store</p>
               </div>
             </article>
             <article class="product-card">
@@ -149,7 +157,7 @@
               <div class="product-card__body">
                 <p class="product-card__cat">Disposables</p>
                 <p class="product-card__name">FLUM Float X</p>
-                <p class="product-card__price">In Store</p>
+                <p class="product-card__price">In store</p>
               </div>
             </article>
             <article class="product-card">
@@ -159,7 +167,7 @@
               <div class="product-card__body">
                 <p class="product-card__cat">Disposables</p>
                 <p class="product-card__name">Geek Bar Pulse 2</p>
-                <p class="product-card__price">In Store</p>
+                <p class="product-card__price">In store</p>
               </div>
             </article>
             <article class="product-card">
@@ -169,7 +177,7 @@
               <div class="product-card__body">
                 <p class="product-card__cat">Disposables</p>
                 <p class="product-card__name">Geek Bar Meloso Max</p>
-                <p class="product-card__price">In Store</p>
+                <p class="product-card__price">In store</p>
               </div>
             </article>
             <article class="product-card">
@@ -179,7 +187,7 @@
               <div class="product-card__body">
                 <p class="product-card__cat">Nicotine Pouches</p>
                 <p class="product-card__name">ZYN Cool Mint</p>
-                <p class="product-card__price">In Store</p>
+                <p class="product-card__price">In store</p>
               </div>
             </article>
             <article class="product-card">
@@ -189,7 +197,7 @@
               <div class="product-card__body">
                 <p class="product-card__cat">Nicotine Pouches</p>
                 <p class="product-card__name">ZYN Wintergreen</p>
-                <p class="product-card__price">In Store</p>
+                <p class="product-card__price">In store</p>
               </div>
             </article>
             <article class="product-card">
@@ -199,7 +207,7 @@
               <div class="product-card__body">
                 <p class="product-card__cat">Nicotine Pouches</p>
                 <p class="product-card__name">ZYN Coffee</p>
-                <p class="product-card__price">In Store</p>
+                <p class="product-card__price">In store</p>
               </div>
             </article>
             <article class="product-card">
@@ -209,7 +217,7 @@
               <div class="product-card__body">
                 <p class="product-card__cat">Kratom</p>
                 <p class="product-card__name">MIT45 Gold</p>
-                <p class="product-card__price">In Store</p>
+                <p class="product-card__price">In store</p>
               </div>
             </article>
           </div>
@@ -240,7 +248,7 @@
       <!-- HOURS & LOCATION -->
       <section class="location" id="hours" aria-labelledby="location-heading">
         <div class="container">
-          <h2 id="location-heading" class="section-heading">Come Find Us</h2>
+          <h2 id="location-heading" class="section-heading">Come find us</h2>
           <div class="location__grid">
             <div class="location__hours">
               <h3 class="location__label">Hours</h3>
@@ -273,7 +281,7 @@
       <!-- FAQ -->
       <section class="faq-section" id="faq" aria-labelledby="faq-heading">
         <div class="container">
-          <h2 id="faq-heading" class="section-heading">Common Questions</h2>
+          <h2 id="faq-heading" class="section-heading">Common questions</h2>
           <dl class="faq-list">
             <div class="faq-item">
               <dt class="faq-q">Do you carry FLUM and Geek Bar disposable vapes?</dt>
@@ -306,7 +314,7 @@
       <!-- CONTACT FORM -->
       <section class="contact-form-section" id="contact-form" aria-labelledby="contact-heading">
         <div class="container">
-          <h2 id="contact-heading" class="section-heading">Get In Touch</h2>
+          <h2 id="contact-heading" class="section-heading">Get in touch</h2>
           <p class="section-sub">Send us a message if you want to know if we have something and we will get back to you.</p>
           <form class="form" action="https://api.web3forms.com/submit" method="POST" id="contact">
             <input type="hidden" name="access_key" value="56d3050c-2ee5-44d5-9147-45a74c450a5c">
@@ -328,7 +336,7 @@
               <textarea class="form__input form__textarea" id="message" name="message" required placeholder="What can we help you with?" rows="4"></textarea>
             </div>
             <div id="form-result" class="form__result" aria-live="polite"></div>
-            <button class="form__submit" type="submit">Send Message</button>
+            <button class="form__submit" type="submit">Send message</button>
           </form>
         </div>
       </section>

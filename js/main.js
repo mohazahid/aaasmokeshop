@@ -94,4 +94,16 @@ document.addEventListener('DOMContentLoaded', () => {
   initAgeGate();
   initContactForm();
   initFAQ();
+  initOpenStatus();
 });
+
+function initOpenStatus() {
+  const el = document.getElementById('open-status');
+  if (!el) return;
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Los_Angeles' }));
+  const mins = now.getHours() * 60 + now.getMinutes();
+  const open = now.getDay() !== 0 && mins >= 630 && mins < 1140;
+  el.textContent = open ? 'Open now, closes at 7 PM' : now.getDay() === 6 && mins >= 1140 || now.getDay() === 0 ? 'Closed now, opens Monday at 10:30 AM' : mins < 630 ? 'Closed now, opens today at 10:30 AM' : 'Closed now, opens tomorrow at 10:30 AM';
+  el.classList.toggle('status--closed', !open);
+}
+
