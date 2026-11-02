@@ -279,3 +279,5 @@ body.gated { overflow: hidden; }
   *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
   html { scroll-behavior: auto; }
 }
+.hero__card-link { display: inline-block; margin-top: 14px; font-size: 15px; font-weight: 600; color: var(--accent); }
+.hero__card-link:hover { text-decoration: underline; }
