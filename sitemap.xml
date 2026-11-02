@@ -3,6 +3,29 @@
   <url>
     <loc>https://www.aaasmokeandvape.com/</loc>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.aaasmokeandvape.com/flum/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.aaasmokeandvape.com/geek-bar/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.aaasmokeandvape.com/zyn/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.aaasmokeandvape.com/kratom/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.aaasmokeandvape.com/cigars/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.aaasmokeandvape.com/glass/</loc>
+    <changefreq>weekly</changefreq>
   </url>
 </urlset>

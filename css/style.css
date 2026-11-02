@@ -281,3 +281,14 @@ body.gated { overflow: hidden; }
 }
 .hero__card-link { display: inline-block; margin-top: 14px; font-size: 15px; font-weight: 600; color: var(--accent); }
 .hero__card-link:hover { text-decoration: underline; }
+.cat-list--links a { display: block; margin: -18px -20px; padding: 18px 20px; }
+.cat-list--links a::after { content: ' \2192'; color: var(--accent); }
+.crumbs { font-size: 14px; color: var(--muted); margin-bottom: 14px; }
+.crumbs a { color: var(--accent); }
+.footer__links ul { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-bottom: 18px; }
+.footer__links a { font-size: 15px; color: var(--muted); }
+.footer__links a:hover { color: var(--text); }
+.nav__link[aria-current="page"] { color: var(--accent); }
+.nav__link { white-space: nowrap; }
+@media (max-width: 1000px) { .nav__links { gap: 18px; } }
+@media (max-width: 860px) { .nav__links { display: none; } }
